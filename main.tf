@@ -23,10 +23,10 @@ resource "ibm_is_security_group" "sg" {
 }
 
 # Attach security group to load balancer
-resource "ibm_is_security_group_target" "lb" {
-    security_group  = ibm_is_security_group.sg.id
-    target          = data.ibm_is_lb.lb.id
-}
+#resource "ibm_is_security_group_target" "lb" {
+#    security_group  = ibm_is_security_group.sg.id
+#    target          = data.ibm_is_lb.lb.id
+#}
 
 #
 # Create security group rules
