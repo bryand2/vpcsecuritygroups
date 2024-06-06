@@ -6,14 +6,14 @@ data ibm_resource_group resource_group {
 }
 
 # Lookup VPC
-#data ibm_is_vpc vpc {
-#  name = var.vpc_name
-#}
+data ibm_is_vpc vpc {
+  name = var.vpc_name
+}
 
 # Lookup load balancer
-data ibm_is_lb lb {
-  name = var.lb_name
-}
+#data ibm_is_lb lb {
+#  name = var.lb_name
+#}
 
 # Create security group
 resource "ibm_is_security_group" "sg" {
